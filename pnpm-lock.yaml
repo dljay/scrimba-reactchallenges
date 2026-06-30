@@ -36,6 +36,34 @@ importers:
         specifier: ^5.0.0
         version: 5.9.3
 
+  06-worldsmostannoying_form:
+    dependencies:
+      nanoid:
+        specifier: 4.0.2
+        version: 4.0.2
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: 18.2.0
+        version: 18.2.0(react@18.2.0)
+      vite:
+        specifier: latest
+        version: 8.1.0
+    devDependencies:
+      '@types/react':
+        specifier: ^18.2.0
+        version: 18.3.31
+      '@types/react-dom':
+        specifier: ^18.2.0
+        version: 18.3.7(@types/react@18.3.31)
+      '@vitejs/plugin-react':
+        specifier: '*'
+        version: 6.0.2(vite@8.1.0)
+      typescript:
+        specifier: ^5.0.0
+        version: 5.9.3
+
 packages:
 
   '@emnapi/core@1.11.1':
@@ -290,6 +318,11 @@ packages:
 
   nanoid@4.0.1:
     resolution: {integrity: sha512-udKGtCCUafD3nQtJg9wBhRP3KMbPglUsgV5JVsXhvyBs/oefqb4sqMEhKBBgqZncYowu58p1prsZQBYvAj/Gww==}
+    engines: {node: ^14 || ^16 || >=18}
+    hasBin: true
+
+  nanoid@4.0.2:
+    resolution: {integrity: sha512-7ZtY5KTCNheRGfEFxnedV5zFiORN1+Y1N6zvPTnHQd8ENUvfaDBeuJDZb2bN/oXwXxu3qkTXDzy57W5vAmDTBw==}
     engines: {node: ^14 || ^16 || >=18}
     hasBin: true
 
@@ -548,6 +581,8 @@ snapshots:
   nanoid@3.3.12: {}
 
   nanoid@4.0.1: {}
+
+  nanoid@4.0.2: {}
 
   picocolors@1.1.1: {}
 
