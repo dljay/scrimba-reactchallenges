@@ -1,5 +1,6 @@
 import { nanoid } from "nanoid"
 import colorData from "./data/colorData"
+import ColorCard from "./components/ColorCard"
 import Header from "./components/Header"
 
 export default function App() {
@@ -20,23 +21,18 @@ export default function App() {
 		Note: colorData and nanoid have already been imported into this file! 
 */
 
-	function ColorCard() {
-		return (
-			<div className="color-card" style={{ background: "#34568B" }}>
-				<p>
-					<span>1.</span> #34568B
-				</p>
-			</div>
-		)
-	}
+	
 	
 	return (
 		<div className="wrapper">
 			<Header /> 
 			
 			{/*------Your ColorCard elements below!-----------*/}
+			{colorData.map ((hexCode, index) => (
 
-				<ColorCard />
+			<ColorCard key={nanoid()} listNumber={index+1} hexcode={hexCode}/>
+			))}
+				
 			
 			{/*------Your ColorCard elements above!-----------*/}
 			
