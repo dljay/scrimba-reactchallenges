@@ -1,4 +1,4 @@
-import colorData from "../data/colorData"
+
 
 type ColorCardProps = {
     listNumber: number
